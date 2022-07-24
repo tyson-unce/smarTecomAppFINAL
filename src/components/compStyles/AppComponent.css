@@ -151,4 +151,7 @@ aside h2 {
 	.homeCards {
 		grid-template-columns: 8% 48% 25% 10%;
 	}
+	.wrapper img {
+		height: 400px;
+	}
 }
