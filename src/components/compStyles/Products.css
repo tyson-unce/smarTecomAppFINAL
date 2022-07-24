@@ -1,0 +1,156 @@
+.prodBod {
+	font-size: x-large;
+	padding-bottom: 11%;
+}
+
+.prodBod input {
+	font-size: larger;
+	border-radius: 10px;
+	border-style: solid;
+}
+
+.prodBod .searchButton {
+	color: #fef9f8;
+	background-color: #ef9273;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 12px;
+	padding-bottom: 8px;
+	font-size: large;
+	border-radius: 10px;
+	border-style: none;
+	margin-right: 10px;
+}
+
+.prodBod .searchButton:hover {
+	cursor: pointer;
+}
+
+.prodBod h5,
+h1 {
+	text-align: center;
+	padding-right: 3%;
+}
+.searchBar {
+	text-align: center;
+}
+
+.actualSearchBar {
+	width: 305px;
+	box-shadow: 10px 10px #f7d0b3;
+}
+
+.productInfo {
+	padding-left: 1%;
+	padding-top: 12%;
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	grid-row-gap: 3em;
+	grid-column-gap: 3%;
+}
+
+.productInfo div {
+	text-align: center;
+	/* border: 1px solid;
+	padding: 10px;
+	box-shadow: 3px 5px 4px #888888; */
+	transition: transform 250ms;
+}
+
+.productInfo div:hover {
+	transform: translateY(-10px);
+}
+
+.productInfo img {
+	width: 150px;
+	height: 150px;
+	border-radius: 15px;
+	/* background-color: #f8bca8; */
+}
+
+.productInfo p {
+	text-align: left;
+	font-size: medium;
+}
+
+.productInfo h5 {
+	font-size: larger;
+	text-align: left;
+}
+
+.productInfo button {
+	background-color: #ef9273;
+	border-style: none;
+	color: white;
+	padding: 8px;
+	border-radius: 10px;
+}
+
+.productInfo button:hover {
+	cursor: pointer;
+}
+
+.productInfo .price {
+	font-size: 1em;
+	/* text-align: center; */
+}
+
+.orderButton {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-size: smaller;
+}
+
+.searchBar form {
+	display: grid;
+	grid-template-columns: 30% 37% 33%;
+}
+select {
+	text-align: center;
+	width: 150px;
+	font-size: large;
+}
+
+@media screen and (max-width: 480px) {
+	.prodBod {
+		font-size: large;
+		padding-bottom: 0;
+	}
+	.searchBar form {
+		display: grid;
+		grid-template-columns: 100%;
+	}
+	.actualSearchBar {
+		width: 175px;
+	}
+	.productInfo {
+		padding-left: 1%;
+		padding-top: 12%;
+		display: grid;
+		grid-template-columns: 100%;
+		grid-row-gap: 3em;
+		grid-column-gap: 3%;
+	}
+}
+
+@media screen and (max-width: 821px) and (min-width: 481px) {
+	.prodBod {
+		font-size: large;
+		padding-bottom: 11%;
+	}
+	.searchBar form {
+		grid-template-columns: 0% 65% 30%;
+	}
+	.actualSearchBar {
+		width: 300px;
+	}
+	.productInfo {
+		padding-left: 1%;
+		padding-top: 12%;
+		display: grid;
+		grid-template-columns: 48% 48%;
+		grid-row-gap: 3em;
+	}
+}

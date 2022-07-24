@@ -1,0 +1,133 @@
+.contactForm {
+	font-size: x-large;
+}
+.form2 textarea {
+	font-size: larger;
+	border-radius: 10px;
+	border-style: solid;
+	box-shadow: 10px 10px #f7d0b3;
+	background-color: white;
+}
+
+.form2 input {
+	font-size: larger;
+	border-radius: 10px;
+	border-style: solid;
+	box-shadow: 10px 10px #f7d0b3;
+}
+
+.form1 input {
+	font-size: larger;
+	border-radius: 10px;
+	border-style: solid;
+	box-shadow: 10px 10px #f7d0b3;
+	width: 850px;
+}
+
+section label {
+	text-align: left;
+}
+
+#conH1 {
+	text-align: center;
+	padding-bottom: 2%;
+}
+
+.conFormPro {
+	display: grid;
+	grid-template-columns: 20% 70% 10%;
+}
+
+.conFormPro p {
+	color: red;
+}
+
+.buttonSub {
+	display: grid;
+	grid-template-columns: 32% 20% 48%;
+}
+
+.buttonSub input {
+	color: #fef9f8;
+	background-color: #ef9273;
+	padding: 15px;
+	padding-left: 70px;
+	padding-right: 70px;
+	font-size: large;
+	border-radius: 10px;
+	border-style: none;
+}
+
+.buttonSub input:hover {
+	cursor: pointer;
+}
+
+.uiMessage {
+	text-align: center;
+	padding-right: 17%;
+}
+
+@media screen and (max-width: 480px) {
+	.contactForm {
+		font-size: medium;
+	}
+	.form1 input {
+		width: 350px;
+		margin-bottom: 2%;
+	}
+
+	.form1 label {
+		width: 300px;
+	}
+
+	.form2 textarea {
+		width: 350px;
+	}
+
+	.buttonSub input {
+		font-size: large;
+		border-radius: 10px;
+		border-style: none;
+		padding: 10px;
+	}
+	.buttonSub {
+		display: flex;
+		justify-content: center;
+	}
+
+	.contactForm p {
+		width: 300px;
+	}
+	.conFormPro {
+		grid-template-columns: 100%;
+	}
+
+	.uiMessage {
+		text-align: center;
+		padding: 0%;
+	}
+}
+
+@media screen and (max-width: 821px) and (min-width: 481px) {
+	.form1 input {
+		width: 650px;
+	}
+	.conFormPro {
+		grid-template-columns: 100%;
+		padding-left: 5%;
+	}
+	.form2 textarea {
+		width: 650px;
+	}
+
+	.buttonSub input {
+		border-radius: 10px;
+		padding: 20px;
+	}
+
+	.buttonSub {
+		display: flex;
+		justify-content: center;
+		padding-right: 4%;
+	}
+}

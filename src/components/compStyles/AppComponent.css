@@ -1,0 +1,147 @@
+.homeCards {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+#ownerPhoto {
+	width: 300px;
+	height: 300px;
+	box-shadow: 10px 10px #f7d0b3;
+	transition: transform 250ms;
+}
+
+#ownerPhoto:hover {
+	transform: translateY(-10px);
+}
+
+aside {
+	width: 300px;
+	height: 300px;
+	text-align: center;
+	background-color: transparent;
+}
+
+aside h2 {
+	text-align: center;
+	background-color: transparent;
+}
+
+.productButton {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+#homeButton {
+	color: #fef9f8;
+	background-color: #ef9273;
+	padding: 15px;
+	padding-left: 70px;
+	padding-right: 70px;
+	font-size: large;
+	border-radius: 10px;
+	border-style: none;
+	transition: transform 250ms;
+}
+
+#homeButton:hover {
+	cursor: pointer;
+	transform: translateY(-10px);
+}
+
+#slider {
+	overflow: hidden;
+}
+
+#slider figure {
+	position: relative;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+	width: 500%;
+}
+
+#slider figure img {
+	width: 20%;
+	float: left;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+.wrapper {
+	padding-top: 5%;
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+	padding-bottom: 5%;
+}
+
+.slogan {
+	text-align: center;
+	font-size: x-large;
+}
+.hiddenBreak {
+	display: none;
+}
+@media screen and (max-width: 480px) {
+	.slogan {
+		display: none;
+	}
+	.wrapper {
+		display: flex;
+
+		align-items: center;
+	}
+
+	.homeCards {
+		display: grid;
+		grid-template-columns: 100%;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	.homeCards aside {
+		padding-top: 10%;
+	}
+
+	#ownerphoto {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 821px) and (min-width: 481px) {
+	.homeCards {
+		grid-template-columns: 8% 48% 25% 10%;
+	}
+}

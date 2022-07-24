@@ -1,0 +1,71 @@
+* {
+	font-family: 'Poppins', sans-serif;
+}
+
+.nav li {
+	display: flex;
+	list-style: none;
+	padding: 30px;
+}
+
+.nav li a {
+	text-decoration: none;
+	color: #0d0d0d;
+	font-size: larger;
+}
+
+.nav,
+ul,
+li,
+a {
+	background-color: white;
+}
+
+.navHome {
+	display: grid;
+	grid-template-columns: 41% 30% 13% 10%;
+}
+
+#logo {
+	width: 100px;
+	height: 100px;
+}
+
+#logo2 {
+	display: none;
+}
+
+@media screen and (max-width: 480px) {
+	.navHome {
+		display: grid;
+		grid-template-columns: 100%;
+	}
+	#logo {
+		display: none;
+	}
+	.nav li {
+		padding: 0;
+		text-align: center;
+	}
+
+	li:hover {
+		cursor: pointer;
+	}
+	#logo2 {
+		display: block;
+		width: 100px;
+		height: 100px;
+		margin: 5px;
+	}
+	nav {
+		display: grid;
+		grid-template-columns: 60% 40%;
+	}
+}
+
+@media screen and (max-width: 821px) and (min-width: 481px) {
+	.navHome {
+		display: grid;
+		grid-template-columns: 38% 25% 18% 5%;
+	}
+}
