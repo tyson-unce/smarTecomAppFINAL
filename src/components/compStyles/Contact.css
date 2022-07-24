@@ -7,6 +7,7 @@
 	border-style: solid;
 	box-shadow: 10px 10px #f7d0b3;
 	background-color: white;
+	padding-left: 10px;
 }
 
 .form2 input {
@@ -22,6 +23,7 @@
 	border-style: solid;
 	box-shadow: 10px 10px #f7d0b3;
 	width: 850px;
+	padding-left: 10px;
 }
 
 section label {

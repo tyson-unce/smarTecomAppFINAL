@@ -3,6 +3,8 @@ import './compStyles/Products.css';
 import Axios from 'axios';
 
 const Products = () => {
+	const [searchTerm, setSearchTerm] = useState('');
+
 	const [products, showProducts] = useState([]);
 
 	useEffect(() => {
@@ -74,6 +76,9 @@ const Products = () => {
 							type='search'
 							name='search bar'
 							placeholder='ex. smarT TV'
+							onChange={(e) => {
+								setSearchTerm(e.target.value);
+							}}
 						/>
 					</div>
 					<div id='dropDown'>
@@ -90,23 +95,33 @@ const Products = () => {
 			</div>
 
 			<div className='productInfo'>
-				{products.map((val) => {
-					return (
-						<div>
-							{/* <h5>{val.name}</h5> */}
-							<button>Add to cart</button>
-							<br />
-							<br />
-							<img src={val.image} alt='product' />
-							<br />
-							<h5>{val.name}</h5>
-							{/* <p className='price'>${val.price}</p> */}
-							{/* <button>Add to cart</button> */}
-							<p>{val.descrip}</p>
-							<p className='price'>${val.price}</p>
-						</div>
-					);
-				})}
+				{products
+					.filter((val) => {
+						if (searchTerm === '') {
+							return val;
+						} else if (
+							val.name.toLowerCase().includes(searchTerm.toLowerCase())
+						) {
+							return val;
+						}
+					})
+					.map((val) => {
+						return (
+							<div>
+								{/* <h5>{val.name}</h5> */}
+								<button>Add to cart</button>
+								<br />
+								<br />
+								<img src={val.image} alt='product' />
+								<br />
+								<h5>{val.name}</h5>
+								{/* <p className='price'>${val.price}</p> */}
+								{/* <button>Add to cart</button> */}
+								<p>{val.descrip}</p>
+								<p className='price'>${val.price}</p>
+							</div>
+						);
+					})}
 			</div>
 		</div>
 	);
