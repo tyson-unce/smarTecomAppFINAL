@@ -70,6 +70,7 @@ section label {
 @media screen and (max-width: 480px) {
 	.contactForm {
 		font-size: medium;
+		padding-left: 1%;
 	}
 	.form1 input {
 		width: 350px;
