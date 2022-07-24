@@ -13,7 +13,7 @@ const Footer = () => {
 							Tyson Unce is an apprentice web developer specializing in the MERN
 							stack. He is a trainee of Road to Hire and an aspiring Junior
 							Software Engineer. Tyson also enjoys basketball and soccer in his
-							mean time and loves connected with new people, so do not be afraid
+							free time and loves connected with new people, so do not be afraid
 							to reach out.
 						</p>
 						<br />
