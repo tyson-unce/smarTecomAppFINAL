@@ -6,27 +6,35 @@ const Products = () => {
 	const [products, showProducts] = useState([]);
 
 	useEffect(() => {
-		Axios.get('http://localhost:3001/getProducts').then((response) => {
-			showProducts(response.data);
-		});
+		Axios.get('https://smartecombackend.herokuapp.com/getProducts').then(
+			(response) => {
+				showProducts(response.data);
+			}
+		);
 	}, []);
 
 	const getLowProd = () => {
-		Axios.get('http://localhost:3001/getProductsPriceLow').then((response) => {
+		Axios.get(
+			'https://smartecombackend.herokuapp.com/getProductsPriceLow'
+		).then((response) => {
 			showProducts(response.data);
 		});
 	};
 
 	const getHighProd = () => {
-		Axios.get('http://localhost:3001/getProductsPriceHigh').then((response) => {
+		Axios.get(
+			'https://smartecombackend.herokuapp.com/getProductsPriceHigh'
+		).then((response) => {
 			showProducts(response.data);
 		});
 	};
 
 	const getCategory = () => {
-		Axios.get('http://localhost:3001/getProducts').then((response) => {
-			showProducts(response.data);
-		});
+		Axios.get('https://smartecombackend.herokuapp.com/getProducts').then(
+			(response) => {
+				showProducts(response.data);
+			}
+		);
 	};
 
 	const onChange = (e) => {
