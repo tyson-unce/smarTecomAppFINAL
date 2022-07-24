@@ -1,3 +1,7 @@
+.wrapper img {
+	height: 600px;
+}
+
 .homeCards {
 	display: grid;
 	grid-template-columns: 25% 25% 25% 10%;
@@ -101,7 +105,7 @@ aside h2 {
 .wrapper {
 	padding-top: 5%;
 	display: grid;
-	grid-template-columns: 20% 60% 20%;
+	grid-template-columns: 10% 80% 10%;
 	padding-bottom: 5%;
 }
 
@@ -113,6 +117,9 @@ aside h2 {
 	display: none;
 }
 @media screen and (max-width: 480px) {
+	.wrapper img {
+		height: 300px;
+	}
 	.slogan {
 		display: none;
 	}

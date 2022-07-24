@@ -6,42 +6,42 @@ const AppComponent = () => {
 	return (
 		<>
 			<div className='wrapper'>
-				<div className='slogan'>smarT products</div>
+				<div className='slogan'></div>
 				<section id='slider'>
 					<figure>
 						<img
-							src=''
+							src={'./images/slide4.png'}
 							height='400'
 							width='300'
-							alt='Customer Vinyl Shopping'
+							alt='slider image'
 						/>
 						<img
-							src='images/Vinyl_Shopper6.webp'
+							src={'./images/slide2.png'}
 							height='400'
 							width='300'
-							alt='Customer Vinyl Shopping2'
+							alt='slider image'
 						/>
 						<img
-							src='images/Vinyl_Shopper4.jpeg'
+							src='images/slide3.png'
 							height='400'
 							width='300'
-							alt='Customer Vinyl Shopping3'
+							alt='slider image'
 						/>
 						<img
-							src='images/Vinyl_Shopper5.webp'
+							src={'./images/slide1.png'}
 							height='400'
 							width='300'
-							alt='Customer Vinyl Shopping4'
+							alt='slider image'
 						/>
 						<img
-							src=''
+							src={'./images/slide4.png'}
 							height='400'
 							width='300'
-							alt='Customer Vinyl Shopping'
+							alt='slider image'
 						/>
 					</figure>
 				</section>
-				<div className='slogan'>dumb prices</div>
+				<div className='slogan'></div>
 			</div>
 			<div className='homeCards'>
 				<div className='padding'></div>
@@ -52,10 +52,11 @@ const AppComponent = () => {
 				></img>
 
 				<aside>
-					<h2>The man behind the vision</h2>Lorem ipsum, dolor sit amet
-					consectetur adipisicing elit. Dolorum molestiae maxime voluptatibus
-					nemo necessitatibus praesentium officia illum minus repellat corrupti
-					similique sunt autem quidem, quia amet aliquid suscipit error earum!
+					<h2>The man behind the vision</h2>One day, our CEO Tyson Unce was
+					wondering why he had to go to so many different sites to get the
+					latest new smart tech. And through this question he realized if he
+					built a site that made it accesible to everyone, then anybody could
+					enjoy our ever-evolving smart-world.
 				</aside>
 				<div className='padding'></div>
 			</div>
