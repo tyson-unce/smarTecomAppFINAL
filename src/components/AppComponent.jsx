@@ -47,7 +47,7 @@ const AppComponent = () => {
 				<div className='padding'></div>
 				<img
 					id='ownerPhoto'
-					src={'./images/tysonUnce.jpeg'}
+					src={'https://i.postimg.cc/QMjy0bKv/tyson-Unce.jpg'}
 					alt='Tyson Unce'
 				></img>
 
