@@ -10,10 +10,11 @@ const Footer = () => {
 					<h2>About us</h2>
 					<div className='content'>
 						<p>
-							CodinNepal is a YouTube channel where you can learn web designing,
-							web development, ui/ux designing, html css tutorial, hover
-							animation and effects, javascript and jquery tutorial and related
-							so on.
+							Tyson Unce is an apprentice web developer specializing in the MERN
+							stack. He is a trainee of Road to Hire and an aspiring Junior
+							Software Engineer. Tyson also enjoys basketball and soccer in his
+							mean time and loves connected with new people, so do not be afraid
+							to reach out.
 						</p>
 						<br />
 						<br />
